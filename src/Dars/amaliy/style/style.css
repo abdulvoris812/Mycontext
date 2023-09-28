@@ -1,0 +1,154 @@
+body {
+  background-color: #272727;
+}
+
+a {
+  color: white;
+  
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 95vh;
+}
+
+.img {
+  width: 400px;
+  height: 723px;
+  margin-left: -65px;
+} 
+
+.hero-box {
+  padding-right: 180px;
+}
+
+.hero-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 95vh;
+}
+
+.title {
+  color: white;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.text {
+  color: #A5A5A5;
+  font-size: 28px;
+  line-height: 55px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -15px;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #6eeb83;
+  padding: 15px 10px;
+  padding-right: 405px;
+  font-size: 18px;
+  color: white;
+}
+
+.select {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #6eeb83;
+  padding: 15px 10px;
+  padding-right: 555px;
+  font-size: 18px;
+  color: #828282;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #6eeb83;
+  color: black;
+  border-width: 0;
+  font-weight: 600;
+  padding: 15px 55px;
+  cursor: pointer;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 45%;
+}
+
+.card-img {
+  width: 500px;
+  height: 200px;
+  margin-left: 45px;
+}
+
+.card-title {
+  transform: rotate(-90deg);
+  position: relative;
+  right: 295px;
+  top: -125px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-text {
+  color: white;
+}
+
+.card-text span {
+  color: #6eeb83;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar a {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navbar a.active::before {
+  content: "";
+  background-color: #6eeb83;
+  width: 20px;
+  height: 4px;
+  position: absolute;
+  top: -10px;
+}

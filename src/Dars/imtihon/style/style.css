@@ -1,0 +1,122 @@
+body {
+	background-color: rgb(0, 29, 67);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+.wrapper {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-color: rgb(2, 45, 101);
+	overflow: hidden;
+}
+
+.wrapper2 {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-color: rgb(2, 45, 101);
+	overflow: hidden;
+}
+
+.wrapper2::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	background-color: red;
+	margin-left: 10px;
+	width: 230px;
+	height: 265px;
+	z-index: -1;
+	animation: rotate22 2s linear infinite;
+	overflow: hidden;
+}
+
+.wrapper::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	background-color: red;
+	margin-left: 10px;
+	width: 230px;
+	height: 265px;
+	z-index: -1;
+	animation: rotate2 2s linear infinite;
+	overflow: hidden;
+}
+
+.child {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(0, 212, 0);
+	margin: 0 auto;
+	position: relative;
+	top: 70px;
+	animation: rotate 2s linear infinite;
+}
+
+.child2 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(0, 212, 0);
+	margin: 0 auto;
+	position: relative;
+	top: 70px;
+	animation: rotate12 2s linear infinite;
+}
+
+@keyframes rotate22 {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes rotate2 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate12 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+.btn {
+	position: relative;
+	top: 35px;
+	right: -75px;
+	padding: 10px 35px;
+	background-color: rgb(88, 88, 88);
+	color: white;
+  border-width: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.2s all ease;
+}
+
+.btn:active {
+	background-color: rgb(57, 57, 57);
+}
